@@ -1,0 +1,6 @@
+This project contains matlab codes for the decentralized learning framework of meta-survival-analysis for development of robust prognostic models. 
+
+"demo.m" contains a demo code for leave-one-dataset-out testing of the proposed method. Before running this code, please unzip "sample data.zip" which contains "surv_os_ovary_rank_ci.mat" to be used by "demo.m". "surv_os_ovary_rank_ci.mat" contains gene expression and survival information for 9 ovarian cancer studies. For each of the studies, however, the gene expression data matrix has been normalized into percentile ranks, and the p-values for each feature (percentile rank-normalized gene) were calculated based on Harrell's concordance index and Stouffer's meta-z as described in our paper.
+
+The workhorse funciton of our method is "cvMeta.m" which performance cross-validation to select the optimal regularization and return the corresponding estimated coefficients. This function relies on the open source optimization tool L1General by Mark Schmidt which can be freely downloaded at: http://www.cs.ubc.ca/~schmidtm/Software/minFunc.html. The sources codes for L1General is also included here for convenience. The L1General folder as well as its subfolders needs to be added to the search path in matlab. 
+
