@@ -1,4 +1,5 @@
-This project contains matlab/R codes for the decentralized learning framework of meta-survival-analysis for development of robust prognostic models. 
+This project contains MATLAB/R codes for the decentralized learning framework of meta-survival-analysis for development of robust prognostic models as published in the following papers:
+> **Yi Cui**, Bailiang Li, and Ruijiang Li. "Decentralized Learning Framework of Meta-Survival Analysis for Developing Robust Prognostic Signatures." *JCO Clinical Cancer Informatics* 1 (2017): 1-13.
 
 "demo.m" contains a demo matlab code for leave-one-dataset-out testing of the proposed method for 9 ovarian cancer datasets. Before running this code, please run "save2matlab.R" in the "R codes" folder. This will do all the required preprocessing steps before model training which include:
 
